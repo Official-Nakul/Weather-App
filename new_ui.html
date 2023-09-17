@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/new_ui_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter the city" class="searchField">
+                <span class="SearchImgContainer"><img src="images/search_FILL0_wght400_GRAD0_opsz48.svg"
+                        class="searchImg" alt=""></span>
+            </div>
+            <span class="cover">
+                <div class="content">
+                    <div class="weatherMainDetail">
+                        <img src="images/weatherConditionImg/clear.png" id="weather-detail-image"
+                            alt="weather-detail-image">
+                        <div class="location">
+                            <img src="images/pin.png" alt="">
+                            <p class="cityName">Berlin</p>
+                        </div>
+                        <p class="weatherCondition">cloudy</p>
+                        <p class="temprature">23°C</p>
+                    </div>
+                    <hr>
+                    <div class="feelsLikeContent">
+                        <div class="feelsLikeContainer">
+                            <img src="images/feels_like1.png" class="feelsLikeImage" alt="feels_like">
+                            <div class="feelsLikeDetails" style="margin-left: 0.25em;">
+                                <p class="feelsLikeTemp" id="feelsLikeTemp">23°C</p>
+                                <p class="feelsLikeTxt">Feels Like</p>
+                            </div>
+                        </div>
+                        <div class="feelsLikeContainer">
+                            <img src="images/maxTemp.png" class="feelsLikeImage" alt="feels_like">
+                            <div class="feelsLikeDetails" style="margin: 0em 0.39em 0em 0.295em;">
+                                <p class="feelsLikeTemp" id="maxTemp">23°C</p>
+                                <p class="feelsLikeTxt">Max Temprature</p>
+                            </div>
+                        </div>
+                        <div class="feelsLikeContainer">
+                            <img src="images/lowTemp.png" class="feelsLikeImage" alt="feels_like">
+                            <div class="feelsLikeDetails" style="margin-left:0.295em ;">
+                                <p class="feelsLikeTemp" id="lowTemp">23°C</p>
+                                <p class="feelsLikeTxt">low Temprature</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="weatherInformation">
+                        <div class="humidityDetails">
+                            <img src="images/humidity.png" alt="" class="humidityImg">
+                            <div class="humidityContent">
+                                <p class="humidity" id="humidityDetail">23</p>
+                                <p class="humidityTxt">Humidity</p>
+                            </div>
+                        </div>
+                        <div class="humidityDetails">
+                            <img src="images/pressure.png" alt="" class="humidityImg">
+                            <div class="humidityContent">
+                                <p class="humidity" id="pressure">23</p>
+                                <p class="humidityTxt">Pressure</p>
+                            </div>
+                        </div>
+                        <div class="humidityDetails">
+                            <img src="images/windSpeed.png" alt="" class="humidityImg">
+                            <div class="humidityContent" style="margin-left: 0.5em;">
+                                <p class="humidity" id="wind">23</p>
+                                <p class="humidityTxt">Wind Speed</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+    <script src="js/new_ui_script.js"></script>
+</body>
+
+</html>

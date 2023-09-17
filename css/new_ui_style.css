@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*---------------------- css -------------------*/
+
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(137, 207, 240);
+    background: linear-gradient(164deg, rgba(137, 207, 240, 1) 0%, rgba(255, 250, 247, 1) 100%);
+    height: 100vh;
+}
+
+.card {
+    padding: 1em;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 27.5em;
+
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 #6cb3ee98;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+hr {
+    margin: 0;
+    border: solid #0000004f 2px;
+    width: 33em;
+}
+
+.cover {
+    display: none;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+/*--------------------------- search area---------------------- */
+.searchbox {
+    background-color: #AFDBF5;
+    border-radius: 50px;
+    width: 35em;
+    height: 2.85em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(11em);
+    transition: all 0.5s ease-in-out;
+    align-self: flex-start;
+}
+
+::placeholder {
+    color: #1E2952;
+}
+
+.searchField {
+    height: 2em;
+    width: 30em;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+
+}
+
+.searchImg {
+    height: 1.75em;
+    width: 1.75em;
+    margin: 5px 0px 0px 6px;
+}
+
+.searchImg:hover {
+    cursor: pointer;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/*-------------- weather details------------------ */
+.weatherMainDetail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.15em;
+}
+
+#weather-detail-image {
+    height: 6em;
+    margin: 0.7em 0em 0.7em 0em;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0;
+    transition: all 3s ease-in-out; */
+}
+
+.location {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 0.5em;
+}
+
+.location>img {
+    height: 1.7em;
+    width: auto;
+}
+
+.temprature {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+.weatherCondition {
+    margin: 0px;
+    font-size: 1.45rem;
+}
+
+/*--------------- feels like content------------------ */
+.feelsLikeContent {
+    width: 25em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+.feelsLikeContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.feelsLikeImage {
+    height: 2.9em;
+    width: auto;
+}
+
+.feelsLikeDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6.29em;
+}
+
+.feelsLikeDetails>p {
+    margin: 0px;
+}
+
+.feelsLikeTxt {
+    font-size: 0.75rem;
+    font-weight: 450;
+}
+
+.feelsLikeTemp {
+    font-size: 1.05rem;
+}
+
+/*-------------------- weather information --------------------*/
+
+.weatherInformation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25em;
+    margin-top: 0.75em;
+}
+
+.humidityDetails {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.humidityImg {
+    height: 2.4em;
+    width: auto;
+}
+
+.humidityContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.humidity {
+    font-size: 1.05rem;
+}
+
+.humidityTxt {
+    font-size: 0.75rem;
+    font-weight: 450;
+}
